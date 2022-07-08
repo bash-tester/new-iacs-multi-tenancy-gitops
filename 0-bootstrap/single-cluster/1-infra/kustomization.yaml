@@ -11,7 +11,15 @@ patches:
       path: /spec/source/repoURL
       value: https://github.com/bash-tester/new-iacs-multi-tenancy-gitops-infra.git
     - op: add
-      path: /spec/sourceRepos/-
+      path: /spec/source/targetRevision
+      value: main
+- target:
+    group: argoproj.io
+    kind: Application
+    labelSelector: "gitops.tier.layer=infra"
+  patch: |-
+    - op: add
+      path: /spec/source/repoURL
       value: https://github.com/Client-Engineering-Industry-Squad-1/iacs-multi-tenancy-gitops-apps
     - op: add
       path: /spec/source/targetRevision
