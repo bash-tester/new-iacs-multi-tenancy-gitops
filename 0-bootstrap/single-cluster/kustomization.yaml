@@ -48,9 +48,6 @@ patches:
       value: https://github.com/Client-Engineering-Industry-Squad-1/iacs-multi-tenancy-gitops-apps.git
     - op: add
       path: /spec/sourceRepos/-
-      value: https://github.com/bash-tester/new-iacs-multi-tenancy-gitops-apps
-    - op: add
-      path: /spec/sourceRepos/-
       value: https://charts.cloudnativetoolkit.dev
 - target:
     group: argoproj.io
@@ -63,6 +60,3 @@ patches:
     - op: add
       path: /spec/sourceRepos/-
       value: https://github.com/Client-Engineering-Industry-Squad-1/iacs-multi-tenancy-gitops-apps.git
-    - op: add
-      path: /spec/sourceRepos/-
-      value: https://github.com/bash-tester/new-iacs-multi-tenancy-gitops-apps
