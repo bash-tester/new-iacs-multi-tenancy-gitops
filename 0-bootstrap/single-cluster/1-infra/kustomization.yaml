@@ -1,5 +1,5 @@
 resources:
-- argocd/namespace-dev1.yaml
+- argocd/namespace-dev.yaml
 - argocd/namespace-dev2.yaml
 patches:
 - target:
