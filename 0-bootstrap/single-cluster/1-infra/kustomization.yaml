@@ -1,4 +1,5 @@
 resources:
+- argocd/namespace-dev1.yaml
 - argocd/namespace-dev2.yaml
 patches:
 - target:
@@ -9,6 +10,9 @@ patches:
     - op: add
       path: /spec/source/repoURL
       value: https://github.com/bash-tester/new-iacs-multi-tenancy-gitops-infra.git
+    - op: add
+      path: /spec/sourceRepos/-
+      value: https://github.com/Client-Engineering-Industry-Squad-1/iacs-multi-tenancy-gitops-apps
     - op: add
       path: /spec/source/targetRevision
       value: main
