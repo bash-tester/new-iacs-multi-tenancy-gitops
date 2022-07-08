@@ -8,7 +8,7 @@ metadata:
 spec:
   sourceRepos: [] # Populated by kustomize patches in 2-services/kustomization.yaml
   destinations:
-  - namespace: dev
+  - namespace: dev2
     server: https://kubernetes.default.svc
   - namespace: openshift-gitops
     server: https://kubernetes.default.svc

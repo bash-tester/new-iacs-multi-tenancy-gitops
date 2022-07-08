@@ -10,7 +10,7 @@ spec:
   project: default
   source:
     path: 0-bootstrap/single-cluster
-    repoURL: https://github.com/Client-Engineering-Industry-Squad-1/iacs-multi-tenancy-gitops.git
+    repoURL: https://github.com/https://github.com/bash-tester/new-iacs-multi-tenancy-gitops.git
     targetRevision: main
   syncPolicy:
     automated:
