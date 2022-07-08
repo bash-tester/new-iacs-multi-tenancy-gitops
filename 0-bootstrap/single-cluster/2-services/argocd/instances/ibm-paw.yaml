@@ -12,10 +12,8 @@ metadata:
     - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    - namespace: dev
-      server: 'https://kubernetes.default.svc'
-    - namespace: dev2
-      server: 'https://kubernetes.default.svc'
+    namespace: dev
+    server: 'https://kubernetes.default.svc'
   project: services
   source:
     repoURL: 'https://farrah-madkour.github.io/planning-analytics-paw/'
