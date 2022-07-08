@@ -7,8 +7,7 @@ metadata:
     gitops.tier.layer: applications
 spec:
   sourceRepos: []  # Populated by kustomize patches in 3-apps/kustomization.yaml
-  destinations:
-  - namespace: dev
+  - namespace: dev2
     server: https://kubernetes.default.svc
   - namespace: openshift-gitops
     server: https://kubernetes.default.svc
@@ -43,7 +42,7 @@ spec:
     server: https://kubernetes.default.svc
   project: applications
   source: # repoURL  and targetRevision populated by kustomize patches in 3-apps/kustomization.yaml
-    path: 0-bootstrap/single-cluster/3-apps
+    path: 0-bootstrap/single-cluster/3-apps-new
   syncPolicy:
     automated:
       prune: true

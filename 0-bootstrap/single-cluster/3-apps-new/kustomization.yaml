@@ -1,5 +1,5 @@
 resources:
-- argocd/paw/dev.yaml
+- argocd/paw/dev2.yaml
 
 patches:
 - target:
@@ -9,7 +9,7 @@ patches:
   patch: |-
     - op: add
       path: /spec/source/repoURL
-      value: https://github.com/Client-Engineering-Industry-Squad-1/iacs-multi-tenancy-gitops-apps.git
+      value: https://github.com/bash-tester/new-iacs-multi-tenancy-gitops-apps
     - op: add
       path: /spec/source/targetRevision
       value: main
