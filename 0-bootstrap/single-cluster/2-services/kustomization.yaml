@@ -7,7 +7,7 @@ patches:
   patch: |-
     - op: add
       path: /spec/source/repoURL
-      value: https://github.com/https://github.com/bash-tester/new-iacs-multi-tenancy-gitops-services.git
+      value: https://github.com/bash-tester/new-iacs-multi-tenancy-gitops-services.git
     - op: add
       path: /spec/source/targetRevision
       value: main
