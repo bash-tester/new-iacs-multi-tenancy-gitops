@@ -1,5 +1,6 @@
 resources:
 - argocd/paw/dev2.yaml
+- argocd/paw/dev.yaml
 
 patches:
 - target:
