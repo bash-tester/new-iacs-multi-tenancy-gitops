@@ -2,17 +2,6 @@ resources:
 - argocd/namespace-dev.yaml
 - argocd/namespace-dev2.yaml
 patches:
-# - target:
-#     group: argoproj.io
-#     kind: Application
-#     labelSelector: "gitops.tier.layer=infra"
-#   patch: |-
-#     - op: add
-#       path: /spec/source/repoURL
-#       value: https://github.com/bash-tester/new-iacs-multi-tenancy-gitops-infra.git
-#     - op: add
-#       path: /spec/source/targetRevision
-#       value: main
 - target:
     group: argoproj.io
     kind: Application
@@ -20,7 +9,18 @@ patches:
   patch: |-
     - op: add
       path: /spec/source/repoURL
-      value: https://github.com/Client-Engineering-Industry-Squad-1/iacs-multi-tenancy-gitops-infra.git
+      value: https://github.com/bash-tester/new-iacs-multi-tenancy-gitops-infra.git
     - op: add
       path: /spec/source/targetRevision
       value: main
+# - target:
+#     group: argoproj.io
+#     kind: Application
+#     labelSelector: "gitops.tier.layer=infra"
+#   patch: |-
+#     - op: add
+#       path: /spec/source/repoURL
+#       value: https://github.com/Client-Engineering-Industry-Squad-1/iacs-multi-tenancy-gitops-infra.git
+#     - op: add
+#       path: /spec/source/targetRevision
+#       value: main
